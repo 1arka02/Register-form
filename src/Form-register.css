@@ -64,7 +64,10 @@
     margin-top: 1rem;
     font-size: 0.9rem;
   }
-  
+  .resend{
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
   .register-form p a {
     color: #007bff;
     text-decoration: none;
