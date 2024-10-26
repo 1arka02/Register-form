@@ -1,0 +1,234 @@
+
+.register-form {
+    background-color:#f9f9f9 ;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .register-form form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .register-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .register-form input,
+  .register-form select {
+    display: flex;
+    padding: 0.3rem;
+    /* width:2rem; */
+    border: 1px solid #c7b6b6;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .register-form input:focus,
+  .register-form select:focus {
+    border-color: #ff9800; /* Focus border color */
+    outline: none;
+  }
+  
+  .register-form button {
+    padding: 0.8rem;
+    background-color: #ff9800;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 2em;
+    font-size: 1rem;
+    cursor: pointer;
+    height:2.5em;
+    width:100%;
+    box-shadow: 1px 1px 1px 1px rgb(226, 222, 222);
+
+  }
+  .register-form button:hover {
+    background-color: #e68a00;
+  }
+  
+  .register-form span {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  .register-form p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .register-form p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-form p a:hover {
+    text-decoration: underline;
+  }
+   .First{
+     display:flex;
+     flex-direction: row;
+     justify-content: space-between;
+  } 
+  .First-name input{
+    width:80%;
+  }
+  .Last-name input{
+    width:100%;
+  }
+  .ISD{
+    width:50%;
+  }
+ .ISD select{
+  width:80%;
+ }
+ .Mobile-Number{
+  width:100%;
+ }
+ .Mobile-Number input{
+  width:100%;
+ }
+ .email-id input{
+  width:100%;
+ }
+ .img1{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height:3.1rem;
+  margin-top: 10px;
+  margin-bottom: 1em;
+ }
+ .image{
+  display: flex;
+  justify-content:center;
+ }
+ .expert{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height:5rem;
+  margin-bottom: 0;
+ }
+ .expert p{
+  font-size: 1.3em;
+ }
+
+ .whole{
+  display:flex;
+  flex-direction: row;
+}
+
+.image-cover{
+  height: 100vh;
+  width:50vw;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(37, 43, 59)
+}
+.image22{
+    width:50vw;
+}
+.Registered {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  background-color: #ff9800;;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  width: 20em;
+  height: 3em;
+  margin: 0;
+  padding: 0;
+  opacity: 1; /* Initially fully visible */
+  animation: slideIn 0.5s ease-out, fadeOut 3s 3s forwards; /* Sliding in, then fading out */
+}
+
+.OTP {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  background-color: #26ff00;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  width: 20em;
+  height: 3em;
+  margin: 0;
+  padding: 0;
+  opacity: 1; /* Initially fully visible */
+  animation: slideIn 0.5s ease-out, fadeOut 3s 3s forwards; /* Sliding in, then fading out */
+}
+
+/* Animation for sliding in */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Animation for fading out */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+  .register-form input,
+  .register-form select {
+    padding: 0.3rem;
+    margin-right: 0.3rem;
+  }
+  .First-name{
+    margin-right: 4px;
+  }
+}
+@media(max-width:960px){
+  .image-cover{
+    opacity:0;
+    width:0px;
+  }
+  .image-cover img{
+    height:0px;
+  }
+  .whole{
+    display:flex;
+  }
+  
+  .register-form{
+    width:100vw;
+    height:100vh;
+  }
+  .register-form input,
+  .register-form select {
+    display: flex;
+    padding: 0.3rem;
+    /* width:2rem; */
+    border: 1px solid #c7b6b6;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+
+
+  
+

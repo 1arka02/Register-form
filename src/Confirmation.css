@@ -1,0 +1,77 @@
+/* confirmation.css */
+
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    text-align: center;
+  }
+  
+  .confirmation-card {
+    background-color: white;
+    padding: 2em;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .success-icon {
+    font-size: 3em;
+    color: #38a169; /* Success green color */
+    margin-bottom: 1em;
+  }
+  
+  .confirmation-message {
+    font-size: 1.5em;
+    color: #2d3748;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .confirmation-details {
+    font-size: 1em;
+    color: #4a5568;
+    margin-bottom: 1.5em;
+  }
+  
+  .back-to-home {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #3182ce;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-home:hover {
+    background-color: #2b6cb0;
+  }
+  
+  /* Success animation */
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    70% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .success-icon {
+    animation: bounceIn 0.6s ease-out;
+  }
+  
